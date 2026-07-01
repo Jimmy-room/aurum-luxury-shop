@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AURUM 阁 | 奢侈品商城</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;600;700&family=Noto+Serif+SC:wght@500;700;900&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="主导航">
+        <a class="brand" href="#home">AURUM 阁</a>
+        <div class="nav-links">
+          <a href="#story">品牌故事</a>
+          <a href="#new">新作发布</a>
+          <a href="#collection">精选系列</a>
+          <a href="#vip">尊享会员</a>
+        </div>
+        <div class="nav-actions">
+          <button class="icon-btn" aria-label="搜索">
+            <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M10.8 18.1a7.3 7.3 0 1 1 0-14.6 7.3 7.3 0 0 1 0 14.6Z" /><path d="m16 16 4.5 4.5" /></svg>
+          </button>
+          <button class="icon-btn bag-btn" aria-label="购物袋">
+            <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.3 8.5h11.4l1.1 12H5.2l1.1-12Z" /><path d="M9 8.5V7a3 3 0 0 1 6 0v1.5" /></svg>
+            <span class="bag-count">0</span>
+          </button>
+          <button class="icon-btn" aria-label="账户">
+            <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12.2a4.2 4.2 0 1 0 0-8.4 4.2 4.2 0 0 0 0 8.4Z" /><path d="M4.8 21a7.2 7.2 0 0 1 14.4 0" /></svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <p class="eyebrow">COLLECTION 2026</p>
+          <h1>极致至简，<br />不凡之选。</h1>
+          <p>AURUM 阁甄选高级成衣、珠宝腕表与皮具，以建筑感线条、稀有材质与私享服务，构建静奢生活方式。</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#collection">立即探索</a>
+            <a class="btn btn-secondary" href="#atelier">私人定制</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro-strip" id="story">
+        <div class="line"></div>
+        <p class="eyebrow">IMPERIAL MINIMALIST</p>
+        <h2>将贵族式克制，落在每一寸材质与比例中。</h2>
+      </section>
+
+      <section class="section split-feature" id="new">
+        <div>
+          <p class="eyebrow">NOUVEAUTES</p>
+          <h2>尊享新作</h2>
+        </div>
+        <a class="text-link" href="#collection">查看全部</a>
+      </section>
+
+      <section class="product-editorial">
+        <article class="feature-card" data-product-id="bag">
+          <div class="product-image image-bag"></div>
+          <div class="product-meta">
+            <div><h3>ARIANNE 丝绒手袋</h3><p>曜石黑 / 限量编号</p></div>
+            <strong>¥28,500</strong>
+          </div>
+        </article>
+        <div class="stacked-products">
+          <article class="feature-card compact" data-product-id="ring">
+            <div class="product-image image-ring"></div>
+            <div class="product-meta">
+              <div><h3>AURUM 极简指环</h3><p>18K 黄金 / 手工打磨</p></div>
+              <strong>¥12,800</strong>
+            </div>
+          </article>
+          <article class="feature-card compact" data-product-id="blazer">
+            <div class="product-image image-blazer"></div>
+            <div class="product-meta">
+              <div><h3>ESSENTIAL 亚麻西装</h3><p>象牙白 / 精裁系列</p></div>
+              <strong>¥15,200</strong>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="atelier" id="atelier">
+        <div class="atelier-copy">
+          <p class="eyebrow">ATELIER SERVICE</p>
+          <h2>私人顾问与高级定制</h2>
+          <p>从量体、材质选择到交付护理，每一件 AURUM 作品均由专属顾问跟进。我们拒绝喧哗的奢华，只保留触感、比例与时间。</p>
+          <a class="btn btn-secondary light" href="#vip">预约顾问</a>
+        </div>
+      </section>
+
+      <section class="section shop-grid" id="collection">
+        <div class="shop-head">
+          <div><p class="eyebrow">CURATED SELECTION</p><h2>精选系列</h2></div>
+          <div class="filters" aria-label="商品筛选">
+            <button class="filter active" data-filter="all">全部</button>
+            <button class="filter" data-filter="fashion">高级成衣</button>
+            <button class="filter" data-filter="jewelry">珠宝腕表</button>
+            <button class="filter" data-filter="leather">皮具</button>
+          </div>
+        </div>
+        <div class="catalog" id="catalog"></div>
+      </section>
+
+      <section class="product-detail" id="detail">
+        <div class="detail-gallery">
+          <div class="detail-main image-gown"></div>
+          <div class="detail-small image-atelier"></div>
+          <div class="detail-small image-watch"></div>
+        </div>
+        <aside class="detail-panel">
+          <p class="eyebrow">2026 春夏高级成衣</p>
+          <h2>AURUM 曜影黑丝绒长裙</h2>
+          <p class="price">¥38,500</p>
+          <div class="detail-row"><span>选择尺码</span><strong>XS - XL</strong></div>
+          <div class="detail-row"><span>库存状态</span><strong class="gold">限量发售</strong></div>
+          <button class="btn btn-primary wide add-featured">加入购物袋</button>
+          <button class="btn btn-secondary wide">私人顾问</button>
+          <div class="copy-block">
+            <h3>匠心工艺</h3>
+            <p>采用意大利工坊定制丝绒，内衬双层真丝。每一道接缝均由资深工匠手工收尾，确保成衣呈现清晰的建筑廓形。</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="vip" id="vip">
+        <div class="vip-copy">
+          <p class="eyebrow">AURUM PRIVILEGE</p>
+          <h2>尊崇，始于此刻。</h2>
+          <p>会员可享全球免运、优先预览、私享沙龙、周年护理与定制档案服务。</p>
+          <div class="vip-actions">
+            <a class="btn btn-primary" href="#collection">开启会员礼遇</a>
+            <a class="btn btn-secondary" href="#detail">查看订单礼遇</a>
+          </div>
+        </div>
+        <div class="member-card" aria-label="会员卡">
+          <span>GOLD MEMBER</span>
+          <strong>AU 8829 0012 9902</strong>
+          <div><small>账户积分</small><b>48,200 PTS</b></div>
+        </div>
+      </section>
+    </main>
+
+    <aside class="cart-drawer" aria-hidden="true">
+      <div class="cart-head">
+        <h2>购物袋</h2>
+        <button class="icon-btn close-cart" aria-label="关闭购物袋">
+          <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14" /><path d="M19 5 5 19" /></svg>
+        </button>
+      </div>
+      <div class="cart-items"></div>
+      <div class="cart-footer">
+        <div><span>小计</span><strong class="cart-total">¥0</strong></div>
+        <button class="btn btn-primary wide">预约结算顾问</button>
+      </div>
+    </aside>
+    <div class="scrim"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
